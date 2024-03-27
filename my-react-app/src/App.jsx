@@ -1,5 +1,6 @@
 import PokemonCard from "./components/PokemonCard"
 import "./App.css";
+
 function App() {
   return (
     <div>
@@ -7,9 +8,12 @@ function App() {
     </div>
   );
 }
+
+
+
 const pokemonList = [
   {
-    name: "bulbasaur",
+    name: 3,
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
