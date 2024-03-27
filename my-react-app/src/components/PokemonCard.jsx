@@ -15,6 +15,7 @@ function PokemonCard({pokemon}) {
       name: PropTypes.string.isRequired,
       imgSrc: PropTypes.string,
     }).isRequired,
- 
+
+  
   }
   export default PokemonCard;
