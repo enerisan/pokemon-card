@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+display : flex;
+justify-content: center;
+flex-direction: column;
+
 }
 
 a {
@@ -73,6 +77,26 @@ button:focus-visible {
   background-color: white;
   border-radius: inherit;
   box-shadow: inherit;
+}
+
+ul{
+list-style-type: none;
+display:flex;
+flex-direction: row;
+padding:1rem;
+
+}
+
+nav {
+  display: flex;
+
+ 
+}
+
+li{
+
+  margin:1rem;
+
 }
 
 @media (prefers-color-scheme: light) {
