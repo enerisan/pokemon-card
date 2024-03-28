@@ -5,30 +5,24 @@ import NavBar from "./components/NavBar";
 
 function App() {
 const [pokemonIndex, setPokemonIndex] = useState(0);
-
-
-const handleClickPrécédent = () => {
-  setPokemonIndex(pokemonIndex -1)
-  console.log(pokemonIndex)
-
-}
-const handleClickSuivant = () => {
-  setPokemonIndex(pokemonIndex +1)
-  console.log(pokemonIndex)
+const handleClickIndex =(index) => {
+  setPokemonIndex(index)
+  
 }
 
+/* console.log(pokemonIndex) */
 
   return ( 
      <div>
    <NavBar 
     pokemonIndex={pokemonIndex}
     pokemonList={pokemonList}
-    handleClickPrécédent={handleClickPrécédent}
-    handleClickSuivant={handleClickSuivant}
+    handleClickIndex={handleClickIndex}
      
    />
+   <section>
     <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-    
+    </section> 
   </div> 
 );
 }
