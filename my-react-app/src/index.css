@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+display : flex;
+justify-content: center;
+
+
 }
 
 a {
@@ -53,6 +57,63 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.card {
+  width: 200px;
+  padding: 1rem;
+  background-color: lightgreen;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+
+  
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: inherit;
+  box-shadow: inherit;
+}
+
+ul{
+list-style-type: none;
+display:flex;
+flex-direction: row;
+padding:1rem;
+
+}
+
+nav {
+  display: flex;
+
+  gap: 1rem;
+
+ 
+}
+
+li{
+
+  margin:1rem;
+
+}
+
+#root{
+  display:flex;
+  justify-content: center;
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
